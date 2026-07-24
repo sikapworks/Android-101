@@ -17,13 +17,13 @@ import androidx.compose.ui.unit.sp
 fun ProfileHeader() {
     Column {
         Text(
-            text = "Name: Siya Kapoor",
+            text = "Siya Kapoor",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold
         )
         Spacer(modifier = Modifier.height(8.dp))
         Text(
-            text = "Role: Android Developer",
+            text = "Android Developer",
             fontSize = 16.sp,
             color = Color.Gray
         )

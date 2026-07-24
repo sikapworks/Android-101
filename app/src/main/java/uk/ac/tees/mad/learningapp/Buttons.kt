@@ -1,4 +1,4 @@
-package uk.ac.tees.mad.learningapp.ui.theme
+package uk.ac.tees.mad.learningapp
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
