@@ -6,23 +6,22 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
-fun Counter(count: Int, onIncrement: () -> Unit) {
+fun Counter(count: Int, onIncrement: () -> Unit, onDecrement: () -> Unit) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
         Text(text = count.toString())
         Log.d("ComposeLearn", "Counter")
-        Button(onClick = { onIncrement() }) {
-            Text("Increment") }
+        Button(onClick = onIncrement) {
+            Text("Increment")
+        }
+        Button(onClick =  onDecrement) {
+            Text("Decrement")
+        }
 //        Text("Welcome")
     }
 }
